@@ -1,0 +1,39 @@
+{
+  "name": "taskflow-api",
+  "version": "1.0.0",
+  "description": "> A Trello/Jira-style task management API. Backend-only, built around production patterns.",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnkurYadav/taskflow-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnkurYadav/taskflow-api/issues"
+  },
+  "homepage": "https://github.com/AnkurYadav/taskflow-api#readme",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@fastify/jwt": "^10.0.0",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.8.5",
+    "pino": "^10.3.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "eslint": "^10.3.0",
+    "prettier": "^3.8.3"
+  }
+}
